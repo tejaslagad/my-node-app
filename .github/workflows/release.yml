@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*.*.*'  # Trigger on semantic version tags like v1.0.0
+permissions:
+  contents: write
 
 jobs:
   release:
