@@ -30,7 +30,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
           script: |
-            cd /var/www/my-node-app
+            cd /home/ubuntu/my-node-app
             git pull origin main
             npm install
             pm2 restart my-node-app || pm2 start index.js --name my-node-app
